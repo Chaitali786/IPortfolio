@@ -39,8 +39,6 @@
                 </div>
               </nav>
         <!--Content -->
-       
-        <div class=" flex-grow-1">
             <main class="col-md-12  col-lg-12 px-md-4">
                  <!--About section-->
                 <div id="about" class="content">
@@ -63,17 +61,7 @@
                             </div>
                           </div>
                         
-                    </div>
-                      <!--  <div class="card" style="width:400px">
-                            <img class="card-img-top" src="myresumepic.jpeg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Chaitali Deore</h4>
-                                <p class="card-text">System Developer</p>
-                                <a href="#" class="btn btn-primary" onclick="showContent('showprofile')" >See Profile</a>
-                            </div>
-                        </div> -->
-                       
-                       
+                    </div>           
                 </div>
                 <div id="showprofile" class="content p-5 my-5 bg-dark text-white" style="display:none;">
                     <p>3 years of experience in software development, mostly with Android and Java. Been part of different
@@ -87,17 +75,36 @@
                 <div id="skills" class="content" style="display:none;">
                     <div class="container p-5 my-5 bg-dark text-white">
                         <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>PYTHON</li>
-                        <li>MONGODB</li>
-                        <li>ANDROID</li>
-                        <li>KOTLIN</li>
-                    </ul>
-
+                        <div class="row">
+                            <div class="col-sm-4 p-3 bg-dark text-white">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>PYTHON</li>
+                                    <li>MONGODB</li>
+                                    <li>ANDROID</li>
+                                    <li>KOTLIN</li>
+                                </ul>
+            
+                            </div>
+                            <div class="col-sm-8 p-3 bg-dark text-white">
+                                <ul>
+                                    <li>Python programming basics and Python programming Advanced</li>
+                                    <li>REST Database: SQL, NoSQL, MongoDB, Cosmos, MySQL, SQLite</li>
+                                    <li>JavaScript</li>
+                                    <li>Django, Flask,</li>
+                                    <li>IT-security: Penetration testing, Ethical Hacking, Skill injections, encryption,</li>
+                                    <li>Social Engineering, Virtual Machines,</li>
+                                    <li>Kali-Linux, Firewalls</li>
+                                    <li>Cloud services: Azure,
+                                        Repl.it, DevOps, Docker</li>
+                                </ul> 
+                                
+                            </div>
+                          </div>
+                    
                     </div>
                     
                 </div>
@@ -173,10 +180,59 @@
                         <h6>E-mail: chaitalideore@gmail.com</h6>  
                         <a class="link-info" href="https://www.linkedin.com/in/chaitalideore786/" >LinkedIn</a>                         
                     </p>
-                    <div class="container p-5 my-5 bg-dark text-white"> 
+                    <!-- Wrapper container -->
+<div class="container py-4">
+
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Email Address</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+      </div>
+  
+      <!-- Message input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+      </div>
+  
+      <!-- Form submissions success message -->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">Form submission successful!</div>
+      </div>
+  
+      <!-- Form submissions error message -->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+      </div>
+  
+    </form>
+  
+  </div>
+  
+  <!-- SB Forms JS -->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                   </div > 
                 </div>
             </main>          
-        </div>
+        
       </div>
 
     
