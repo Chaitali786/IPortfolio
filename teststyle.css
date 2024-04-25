@@ -1,37 +1,7 @@
 /* Custom styles */
 
-    body {
-        font-family: 'Arial', sans-serif;
-        height: 100vh; /* Set body height to 100% of viewport height */
-    }
-    .bg-body-tertiary {
-        --bs-bg-opacity: 1;
-        background-color: rgb(192, 104, 64) ;
-    }
-
-.photo {
-    width: 100px;
-    height: 100px;
-}
-
-.content {
-    padding: 20px;
-}
-
-.content h2 {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.content ul {
-    list-style-type: none;
-}
-
-.content ul li {
-    margin-bottom: 10px;
-}
-
-@media screen and (max-width:992px){
+    
+/*@media screen and (max-width:992px){
     .navbar .container-fluid, .navbar-expand-lg .navbar-collapse, .navbar-expand-lg .navbar-nav{
       flex-direction : column ; 
       align-items: flex-start;
@@ -48,4 +18,81 @@
     margin-left: .5rem;
     font-size: 1.5em;
     font-weight: bold;
+}*/
+/*.custom-container {
+    max-width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}*/
+
+.custom-navbar {
+    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+    /*background: linear-gradient(to right, #007bff, #6c757d); /* Gradient background */
 }
+
+.custom-navbar .nav-link {
+    color: #ffffff;
+}
+.custom-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #1c324b; /* Added border */
+    border-radius: 20px;
+    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+}
+#work a {
+    color: rgb(255, 255, 255);
+}
+.custom-form .form-control {
+    border: 1px solid #ccc;
+}
+
+.custom-container {
+    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+    padding: 20px;
+    border-radius: 10px;
+}
+.custom-bg {
+            background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+        }
+
+        #about.content{
+            position: relative;
+        }
+        #skills.content {
+            display: block;
+            height: 100vh; /* Set height to 100% of viewport height */
+            position: relative;
+        }
+        #work.content {
+            display: block;
+            height: 100vh; /* Set height to 100% of viewport height */
+            position: relative;
+        }
+        
+        #contactme.content {
+            display: block;
+            height: 100vh; /* Set height to 100% of viewport height */
+            position: relative;
+        }
+        .footer {
+            background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-icons {
+            margin-top: 10px;
+        }
+
+        .footer-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+        }

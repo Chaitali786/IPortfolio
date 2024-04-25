@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="teststyles.css">
+    <link rel="stylesheet" href="teststyle.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid custom-container">
             <!-- Navbar -->
-               <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" data-bs-theme="light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><h4>Chaitali Deore</h4></a>
+                  <a class="navbar-brand" href="#"><h1>Chaitali Deore</h1></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -40,14 +42,14 @@
               </nav>
         <!--Content -->
             <main class="col-md-12  col-lg-12 px-md-4">
-                 <!--About section-->
+                <!--About section-->
                 <div id="about" class="content">
-                    <div class="container p-5 my-5 bg-dark text-white">
+                    <div class="container custom-container p-5 my-5 bg-dark text-white">
                         <div class="row">
-                            <div class="col-sm-4 p-3 bg-dark text-white">
-                            <img  class="img-thumbnail"src="myresumepic.jpeg" alt="Card image">
+                            <div class="col-sm-4 p-3 custom-bg text-white">
+                            <img  class="img-thumbnail" src="myresumepic.jpeg" alt="Card image">
                             </div>
-                            <div class="col-sm-8 p-3 bg-dark text-white">
+                            <div class="col-sm-8 p-3 custom-bg text-white">
                                 <h3>Hello , I am <br></h3>
                                     System Developer | Freelancer 
                                     <br><br>
@@ -63,20 +65,12 @@
                         
                     </div>           
                 </div>
-                <div id="showprofile" class="content p-5 my-5 bg-dark text-white" style="display:none;">
-                    <p>3 years of experience in software development, mostly with Android and Java. Been part of different
-                        teams, and worked with SCRUM. I am now looking for a new and challenging job where I can give my
-                        expertise, help the company, and develop myself, both as a person and as a developer. Previous
-                        colleagues have described me as a collaborative team player, solution-oriented problem solver, strong
-                        communicator, and highly adaptable.
-                    </p>
-                    <a href="#" class="btn btn-primary" onclick="showContent('about')" > Back </a>
-                </div>
+                <!--Skill section-->
                 <div id="skills" class="content" style="display:none;">
-                    <div class="container p-5 my-5 bg-dark text-white">
+                    <div class="container p-5 my-5 custom-bg text-white">
                         <h2>Skills</h2>
                         <div class="row">
-                            <div class="col-sm-4 p-3 bg-dark text-white">
+                            <div class="col-sm-4 p-3 custom-bg text-white">
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
@@ -89,7 +83,7 @@
                                 </ul>
             
                             </div>
-                            <div class="col-sm-8 p-3 bg-dark text-white">
+                            <div class="col-sm-8 p-3 custom-bg text-white">
                                 <ul>
                                     <li>Python programming basics and Python programming Advanced</li>
                                     <li>REST Database: SQL, NoSQL, MongoDB, Cosmos, MySQL, SQLite</li>
@@ -108,16 +102,33 @@
                     </div>
                     
                 </div>
+                <!--Work Experience section-->
                 <div id="work" class="content" style="display:none;">
-                    <div class="container p-5 my-5 bg-dark text-white"> 
-                    <h2>Work Experience</h2>
-                    <p><a href="#" class="link-info" onclick="showContent('viaplay')"> Viaplay </a> </p>
-                    <p><a href="#" class="link-info" onclick="showContent('myreload')">MyReload</a> </p>
-                    <p><a href="#" class="link-info" onclick="showContent('dataentrega')">DataEntrega</a> </p>
-                    <p><a href="#" class="link-info" onclick="showContent('globuzzer')">Globuzzer</a> </p>
-                    </div>
+                    <div class="container p-5 my-5 custom-bg text-white"> 
+                    <h2>Professional  Experience</h2>
+                    
+                        
+                        <ul>
+                            <li>
+                                <h4><a href="#" class="nav-link" onclick="showContent('viaplay')"> Viaplay </a></h4> 
+                            </li>
+                            
+                            <li>
+                                <h4><a href="#" class="nav-link" onclick="showContent('myreload')"> MyReload </a> </h4>
+                            </li>
+                            <li>
+                                <h4><a href="#" class="nav-link" onclick="showContent('dataentrega')"> DataEntrega </a> </h4>
+                            </li>
+                            <li>
+                                <h4><a href="#" class="nav-link" onclick="showContent('globuzzer')"> Globuzzer </a> </h4>
+                            </li>
+                            
+                        </ul>
+                    
+                    
                 </div>
-                <div id="viaplay" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                </div>
+                <div id="viaplay" class="content p-5 my-5 custom-bg text-white" style="display:none;">
                     <h1>Viaplay</h1>
                     <p> Android Developer | Viaplay |Stockholm Oct 2022 - Feb 2023 <br>
                         ▪ I contributed to developing and testing the streaming app for the leading Nordic
@@ -131,7 +142,7 @@
                     </p>
                     <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
                 </div>
-                <div id="myreload" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                <div id="myreload" class="content p-5 my-5 custom-bg text-white" style="display:none;">
                     <h1>MyReload</h1>
                     <p> Android Developer | MyReload |Stockholm Feb 2022 - June 2022 <br>
                         ▪ I contributed to the design, and development of Reload Android app.
@@ -143,7 +154,7 @@
                     </p>
                     <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
                 </div>
-                <div id="dataentrega" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                <div id="dataentrega" class="content p-5 my-5 custom-bg text-white" style="display:none;">
                     <h1>Data Entrega</h1>
                     <p> E-Learning Training Support Analyst | DataEntrega | Remote June 2021 - Feb 2022<br>
                         ▪ Create, maintain, and update WhereScape courses in LMS.
@@ -157,7 +168,7 @@
                     </p>
                     <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
                 </div>
-                <div id="globuzzer" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                <div id="globuzzer" class="content p-5 my-5 custom-bg text-white" style="display:none;">
                     <h1>Globuzer</h1>
                     <p> Web Developer | Globuzzer | Stockholm June 2018 - Dec 2018 <br>
                         ▪ Implementation of Bootstrap
@@ -170,71 +181,59 @@
                     </p>
                     <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
                 </div>
-
+                <!--Contact Me section-->
                 <div id="contactme" class="content" style="display:none;">
-                    <div class="container p-5 my-5 bg-dark text-white"> 
-                    <h3>Contact Me</h3>
-                    <p>
-                        <h4>Chaitali Balkrishna Deore.</h4>
-                        <h5>Mobile - +46 734956598</h5>    
-                        <h6>E-mail: chaitalideore@gmail.com</h6>  
-                        <a class="link-info" href="https://www.linkedin.com/in/chaitalideore786/" >LinkedIn</a>                         
-                    </p>
-                    <!-- Wrapper container -->
-<div class="container py-4">
-
-    <!-- Bootstrap 5 starter form -->
-    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-  
-      <!-- Name input -->
-      <div class="mb-3">
-        <label class="form-label" for="name">Name</label>
-        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-      </div>
-  
-      <!-- Email address input -->
-      <div class="mb-3">
-        <label class="form-label" for="emailAddress">Email Address</label>
-        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
-        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-      </div>
-  
-      <!-- Message input -->
-      <div class="mb-3">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-      </div>
-  
-      <!-- Form submissions success message -->
-      <div class="d-none" id="submitSuccessMessage">
-        <div class="text-center mb-3">Form submission successful!</div>
-      </div>
-  
-      <!-- Form submissions error message -->
-      <div class="d-none" id="submitErrorMessage">
-        <div class="text-center text-danger mb-3">Error sending message!</div>
-      </div>
-  
-      <!-- Form submit button -->
-      <div class="d-grid">
-        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-      </div>
-  
-    </form>
-  
-  </div>
-  
-  <!-- SB Forms JS -->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-                   </div > 
+                    
+                    <div class="container p-5 my-5 custom-bg text-white"> 
+                            <h2>Contact Me</h2>
+                            <p>
+                                <h4>Chaitali Balkrishna Deore.</h4>
+                                <h5>Mobile - +46 734956598</h5>    
+                                <h6>E-mail: chaitalideore@gmail.com</h6>  
+                                <a class="link-info" href="https://www.linkedin.com/in/chaitalideore786/" >LinkedIn</a>                         
+                            </p>
+                    
+                    
+                                <form class="custom-form form-control">
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label">Name</label>
+                                        <input type="text" class="form-control form-control-sm" id="exampleInputName" placeholder="Enter name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputMessage" class="form-label">Message</label>
+                                        <textarea class="form-control form-control-sm" id="exampleInputMessage" rows="4" placeholder="Enter message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                </form>
+                           
+                </div >
+                    
                 </div>
-            </main>          
+            </main>  
+            
+            <!-- Footer -->
+        <div class="footer">
         
-      </div>
+        <div class="footer-left">
+            <p>Copyright © 2024 | All rights reserved | Designed By Chaitali</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i the="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        </div>
+        </div>
+      
 
+<!-- FontAwesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/js/all.min.js"></script>
     
 <!-- Bootstrap JS and Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
