@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="teststyles.css">
+</head>
+<body>
+    <div class="container-fluid">
+            <!-- Navbar -->
+               <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h4>Chaitali Deore</h4></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('about')">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('skills')">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('work')">Work Experience</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('contactme')">Contact Me </a>
+                      </li> 
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        <!--Content -->
+       
+        <div class=" flex-grow-1">
+            <main class="col-md-12  col-lg-12 px-md-4">
+                 <!--About section-->
+                <div id="about" class="content">
+                    <div class="container p-5 my-5 bg-dark text-white">
+                        <div class="row">
+                            <div class="col-sm-4 p-3 bg-dark text-white">
+                            <img  class="img-thumbnail"src="myresumepic.jpeg" alt="Card image">
+                            </div>
+                            <div class="col-sm-8 p-3 bg-dark text-white">
+                                <h3>Hello , I am <br></h3>
+                                    System Developer | Freelancer 
+                                    <br><br>
+                                <p>
+                                    I have around 3 years of proven experience in software development, mostly with Android and Java. Been part of different
+                                    teams, and worked with SCRUM. I am now looking for a new and challenging job where I can give my
+                                    expertise, help the company, and develop myself, both as a person and as a developer. Previous
+                                    colleagues have described me as a collaborative team player, solution-oriented problem solver, strong
+                                    communicator, and highly adaptable.
+                                </p>
+                            </div>
+                          </div>
+                        
+                    </div>
+                      <!--  <div class="card" style="width:400px">
+                            <img class="card-img-top" src="myresumepic.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Chaitali Deore</h4>
+                                <p class="card-text">System Developer</p>
+                                <a href="#" class="btn btn-primary" onclick="showContent('showprofile')" >See Profile</a>
+                            </div>
+                        </div> -->
+                       
+                       
+                </div>
+                <div id="showprofile" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                    <p>3 years of experience in software development, mostly with Android and Java. Been part of different
+                        teams, and worked with SCRUM. I am now looking for a new and challenging job where I can give my
+                        expertise, help the company, and develop myself, both as a person and as a developer. Previous
+                        colleagues have described me as a collaborative team player, solution-oriented problem solver, strong
+                        communicator, and highly adaptable.
+                    </p>
+                    <a href="#" class="btn btn-primary" onclick="showContent('about')" > Back </a>
+                </div>
+                <div id="skills" class="content" style="display:none;">
+                    <div class="container p-5 my-5 bg-dark text-white">
+                        <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>PYTHON</li>
+                        <li>MONGODB</li>
+                        <li>ANDROID</li>
+                        <li>KOTLIN</li>
+                    </ul>
+
+                    </div>
+                    
+                </div>
+                <div id="work" class="content" style="display:none;">
+                    <div class="container p-5 my-5 bg-dark text-white"> 
+                    <h2>Work Experience</h2>
+                    <p><a href="#" class="link-info" onclick="showContent('viaplay')"> Viaplay </a> </p>
+                    <p><a href="#" class="link-info" onclick="showContent('myreload')">MyReload</a> </p>
+                    <p><a href="#" class="link-info" onclick="showContent('dataentrega')">DataEntrega</a> </p>
+                    <p><a href="#" class="link-info" onclick="showContent('globuzzer')">Globuzzer</a> </p>
+                    </div>
+                </div>
+                <div id="viaplay" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                    <h1>Viaplay</h1>
+                    <p> Android Developer | Viaplay |Stockholm Oct 2022 - Feb 2023 <br>
+                        ▪ I contributed to developing and testing the streaming app for the leading Nordic
+                        entertainment provider.<br>
+                        ▪ I used Kotlin and Jetpack Compose to create engaging and responsive user interfaces,
+                        integrated REST APIs from internal and external sources, and implemented continuous
+                        integration build processes for mobile development.<br>
+                        ▪ I also applied common design patterns such as MVC and MVVM, and worked with
+                        Agile/Scrum methodologies and tools such as Git and JIRA
+                        Tech: Kotlin , Android, Jetpack Compose , Java
+                    </p>
+                    <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
+                </div>
+                <div id="myreload" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                    <h1>MyReload</h1>
+                    <p> Android Developer | MyReload |Stockholm Feb 2022 - June 2022 <br>
+                        ▪ I contributed to the design, and development of Reload Android app.
+                        ▪ REST API integration from internal and external resources.
+                        ▪ Familiar with the rituals of Agile / Scrum
+                        ▪ Experience in defining continuous integration build processes for mobile development.
+                        Tech: Kotlin , Android, Jetpack Compose , Java
+                        
+                    </p>
+                    <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
+                </div>
+                <div id="dataentrega" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                    <h1>Data Entrega</h1>
+                    <p> E-Learning Training Support Analyst | DataEntrega | Remote June 2021 - Feb 2022<br>
+                        ▪ Create, maintain, and update WhereScape courses in LMS.
+                        ▪ Configure, assign and extend training VM on Cloudshare to customers.
+                        ▪ Maintain a record of assigned training in the MS Office 365 tool.
+                        ▪ Responsible for technical support of WhereScape ELT training courses for worldwide
+                        customers.
+                        Tech: Project Management, MS Office 365 Administration, Customer Onboarding, Cloudshare,
+                        RED, DVE, and Snowflake Database
+                        
+                    </p>
+                    <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
+                </div>
+                <div id="globuzzer" class="content p-5 my-5 bg-dark text-white" style="display:none;">
+                    <h1>Globuzer</h1>
+                    <p> Web Developer | Globuzzer | Stockholm June 2018 - Dec 2018 <br>
+                        ▪ Implementation of Bootstrap
+                        ▪ Firebase Database, User Authentication
+                        ▪ Agile Methodology
+                        ▪ Best Practice for medium scale development
+                        ▪ Responsive Web Design.
+                        Tech : HTML5 , CSS ,CSS Flexbox , CSS Flexgrid , JavaScript .
+                        
+                    </p>
+                    <a href="#" class="btn btn-primary" onclick="showContent('work')" > Back </a>
+                </div>
+
+                <div id="contactme" class="content" style="display:none;">
+                    <div class="container p-5 my-5 bg-dark text-white"> 
+                    <h3>Contact Me</h3>
+                    <p>
+                        <h4>Chaitali Balkrishna Deore.</h4>
+                        <h5>Mobile - +46 734956598</h5>    
+                        <h6>E-mail: chaitalideore@gmail.com</h6>  
+                        <a class="link-info" href="https://www.linkedin.com/in/chaitalideore786/" >LinkedIn</a>                         
+                    </p>
+                    <div class="container p-5 my-5 bg-dark text-white"> 
+                </div>
+            </main>          
+        </div>
+      </div>
+
+    
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="testscript.js"></script>
+
+</body>
+</html>

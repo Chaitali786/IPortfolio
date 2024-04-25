@@ -1,0 +1,51 @@
+/* Custom styles */
+
+    body {
+        font-family: 'Arial', sans-serif;
+        height: 100vh; /* Set body height to 100% of viewport height */
+    }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: rgb(192, 104, 64) ;
+    }
+
+.photo {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:992px){
+    .navbar .container-fluid, .navbar-expand-lg .navbar-collapse, .navbar-expand-lg .navbar-nav{
+      flex-direction : column ; 
+      align-items: flex-start;
+    }
+}
+
+.navbar {
+    width :25% ;
+    height : 100vh ; 
+    align-items: flex-start;
+   
+}
+.navbar -brand{
+    margin-left: .5rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
