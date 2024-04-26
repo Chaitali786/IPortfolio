@@ -1,7 +1,7 @@
 
 # Chaitali Deore's Portfolio Website
 
-Chaitali Deore's Portfolio - https://chaitali786.github.io/Iportfolio/iportfolio.html?x=y#
+Chaitali Deore's Portfolio - https://chaitali786.github.io/Iportfolio/iportfolio.html
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio site, showcasing my skills, work experience, education, and contact information.
 
