@@ -28,7 +28,8 @@
 }*/
 
 .custom-navbar {
-    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+    background: linear-gradient(to right, #09203F, #537895) ;
+    /*background: linear-gradient(to right, #1de7dd, #1076cf);  Gradient background */
     /*background: linear-gradient(to right, #007bff, #6c757d); /* Gradient background */
 }
 
@@ -41,7 +42,7 @@
     padding: 10px;
     /*border: 2px solid #1c324b;  Added border */
     border-radius: 20px;
-    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+    background: linear-gradient(to right, #09203F, #537895) ;
 }
 #work a {
     color: rgb(255, 255, 255);
@@ -52,6 +53,9 @@
 .custom-form .form-control {
     border: 1px solid #66c3e7;
 }
+.custom-form label.form-label {
+    color: white; /* Set label text color to white */
+}
 /* Style for pipe separator */
 .pipe {
     padding: 0 5px;
@@ -59,22 +63,34 @@
 }
 
 .custom-container {
-    background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+    
+    /* background: linear-gradient(to right, #1de7dd, #1076cf); Gradient background 
+    background: linear-gradient(to right, #2a4bc6, #00d3ff) ; #09203F → #537895*/
+    background: linear-gradient(to right, #09203F, #537895) ;
+    
     padding: 20px;
     border-radius: 10px;
+}
+.custom-bg {
+    background: linear-gradient(to right, #09203F, #537895) ;
+    /*background: linear-gradient(to right, #2a4bc6, #00d3ff) ;
+    background: linear-gradient(to right, #1de7dd, #1076cf);  Gradient background */
+}
+.custom-bg1 {
+    background: linear-gradient(to right, #1076cf, #1de7dd); /* Gradient background */
+    
 }
 
 
 .custom-bg h2{
-    background: linear-gradient(to right, #1076cf, #1de7dd); /* Gradient background */
+    background: linear-gradient(to right, #09203F, #537895) ;
+    /* background: linear-gradient(to right, #1076cf, #1de7dd); Gradient background */
     padding: 10px;
     margin-bottom: 20px;
     text-align: center; /* Align text in center */
     border-radius: 20px; /* Add round border */
 }
-.custom-bg {
-            background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
-        }
+
 
         #about.content{
             position: relative;
@@ -96,7 +112,9 @@
             position: relative;
         }
         .footer {
-            background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
+            background: linear-gradient(to right, #09203F, #537895) ;
+            /*background: linear-gradient(to right, #2a4bc6, #00d3ff) ;
+            background: linear-gradient(to right, #1de7dd, #1076cf);  Gradient background */
             color: white;
             text-align: center;
             padding: 10px 0;
