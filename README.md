@@ -38,10 +38,4 @@ To run the portfolio website locally, follow these steps:
 Feel free to explore the various sections of the website to learn more about me and my work. 
 You can navigate through different sections using the navbar links. If you have any questions or would like to connect, don't hesitate to reach out to me via email or social media.
 
-## Contributing
 
-Contributions to my portfolio website are welcome! If you have any suggestions for improvements or would like to report a bug, please open an issue or submit a pull request. Let's collaborate to make this portfolio even better!
-
-
-
-Feel free to customize the content further to better fit your preferences and provide more detailed information about your portfolio website.
