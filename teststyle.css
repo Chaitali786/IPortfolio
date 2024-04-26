@@ -39,21 +39,38 @@
     max-width: 500px;
     margin: auto;
     padding: 10px;
-    border: 2px solid #1c324b; /* Added border */
+    /*border: 2px solid #1c324b;  Added border */
     border-radius: 20px;
     background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
 }
 #work a {
     color: rgb(255, 255, 255);
 }
+#contactme a {
+    color: rgb(255, 255, 255);
+}
 .custom-form .form-control {
-    border: 1px solid #ccc;
+    border: 1px solid #66c3e7;
+}
+/* Style for pipe separator */
+.pipe {
+    padding: 0 5px;
+    color: rgb(255, 255, 255); /* Pipe color */
 }
 
 .custom-container {
     background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
     padding: 20px;
     border-radius: 10px;
+}
+
+
+.custom-bg h2{
+    background: linear-gradient(to right, #1076cf, #1de7dd); /* Gradient background */
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Align text in center */
+    border-radius: 20px; /* Add round border */
 }
 .custom-bg {
             background: linear-gradient(to right, #1de7dd, #1076cf); /* Gradient background */
